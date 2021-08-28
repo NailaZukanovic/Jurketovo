@@ -124,9 +124,9 @@ public:
 
     ApstraktniStudent* operator [] (int brojIndeksa) const
     {
-        for(ApstraktniStudent* student : studenti )
+        for(ApstraktniStudent* student : studenti)
 
-            if( student->DajBrojIndeksa() == brojIndeksa ) return student;
+            if(student->DajBrojIndeksa() == brojIndeksa) return student;
 
     }
 
