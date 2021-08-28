@@ -149,10 +149,7 @@ public:
                 }
         }
 
-        for(ApstraktniStudent* student: studenti)
-        {
-            student->IspisiPodatke();
-        }
+        for(ApstraktniStudent* student: studenti)   student->IspisiPodatke();
 
     }
 
