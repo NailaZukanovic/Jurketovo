@@ -5,7 +5,7 @@
 class Vector3d
 {
 private:
-    double koordinate[3];
+    double koordinate[3]; //bolje koristiti vektor jer je niz u biti samo pokazivac u klasi
     mutable int brojIspisa;
 public:
 
