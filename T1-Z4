@@ -8,7 +8,7 @@ int main()
 
         double n;
 
-        for(;;){
+        while(True){
             std::cout << "Uneiste prirodan broj n ";
             std::cin >> n;
 
