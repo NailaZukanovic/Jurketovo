@@ -133,21 +133,16 @@ public:
     void IspisiSveStudente()
     {
         for(int i = 0; i < studenti.size() - 1; i++ )
-        {
+   
             for(int j = i + 1; j < studenti.size(); j++)
+            
                 if(studenti[i]->DajProsjek() > studenti[j]->DajProsjek())
-                {
                     std::swap(studenti[i], studenti[j]);
-                }
-                else if(studenti[i]->DajProsjek() == studenti[j]->DajProsjek())
-                {
-                    if(studenti[i]->DajBrojIndeksa() > studenti[j]->DajBrojIndeksa())
-                    {
+            
+                else if(studenti[i]->DajProsjek() == studenti[j]->DajProsjek() && studenti[i]->DajBrojIndeksa() > studenti[j]->DajBrojIndeksa())
                         std::swap(studenti[i], studenti[j]);
-                    }
 
-                }
-        }
+                
 
         for(ApstraktniStudent* student: studenti)   student->IspisiPodatke();
 
